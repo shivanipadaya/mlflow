@@ -1,0 +1,8 @@
+routes:
+  - name: embeddings
+    route_type: llm/v1/embeddings
+    model:
+      provider: mlflow-model-serving
+      name: sentence-transformer
+      config:
+        model_server_url: http://127.0.0.1:9010
